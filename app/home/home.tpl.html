@@ -1,10 +1,9 @@
-<h1>Home</h1>
+<h1 ui-sref="home">Home</h1>
 
-<ul>
-	<li><a ui-sref="about">About Us</a></li>
-	<li><a ui-sref="home.red">Nested Route: home.red</a></li>
-</ul>
-
+<a ui-sref="about">About Us</a><br />
+<form ng-submit="search(band)">
+	<input ng-model="band" placeholder="band name"> <button type="submit">Search</button>
+</form>
 <p>{{body}}</p>
 <hr>
 <div ui-view></div>

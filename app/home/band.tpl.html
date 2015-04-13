@@ -1,0 +1,8 @@
+<h3>Nested View: Music</h3>
+<ul>
+	<li ng-repeat="item in list">
+		<a ng-click="setTrack(item)" ui-sref="home.band.modal({item: item})">{{item.trackName}}</a>
+	</li>
+</ul>
+<div ui-view></div>
+<span>Back to <a ui-sref="home">home</a></span>
